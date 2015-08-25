@@ -1,107 +1,17 @@
-# <img src="osx_app/MultiQC_logo.png" width="300" title="MultiQC">
+# <img src="MultiQC_logo.png" width="300" title="MultiQC">
 
 **MultiQC is a tool to aggregate bioinformatics results across many samples into
 a single report.**
 
-It is written in Python and contains modules for a number of common tools.
-Currently, these include:
+This repository branch contains files to build the Mac OS X App version of MultiQC. For information about the package, please see the [main repository branch](https://github.com/ewels/MultiQC).
 
-* [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-* [FastQ Screen](http://www.bioinformatics.babraham.ac.uk/projects/fastq_screen/)
-* [Cutadapt](https://code.google.com/p/cutadapt/)
-* [Bismark](http://www.bioinformatics.babraham.ac.uk/projects/bismark/)
-* [STAR](https://github.com/alexdobin/STAR)
-* [Bowtie](http://bowtie-bio.sourceforge.net)
-* [Subread featureCounts](http://bioinf.wehi.edu.au/featureCounts/)
-* [Picard MarkDuplicates](http://broadinstitute.github.io/picard/)
+---
 
-More to come soon. Please suggest any ideas as a new
-[issue](https://github.com/ewels/MultiQC/issues).
+The OS X app is built using [Platypus](http://sveinbjorn.org/platypus).
+To try to make the app work in as many places as possible, I've taken the
+dubious step of including a python virtual environment in the package which
+has all of the dependencies. I got the idea from
+[this stackexchange post](http://apple.stackexchange.com/questions/159611/including-python-script-dependencies-virtualenv-contents-in-platypus).
 
-## Graphical Usage
-
-MultiQC comes with a graphical app for OS X. To use, download
-[MultiQC.app.zip](https://github.com/ewels/MultiQC/raw/master/osx_app/MultiQC.app.zip)
-and unzip the archive. Double click MultiQC.app to launch, then
-drag your analysis directory onto the window.
-
-The app can be run from anywhere, though we recommend copying to your
-Applications directory.
-
-A similar graphical utility for Windows is planned for a future release.
-
-## Command Line Usage
-
-To install, either [download](https://github.com/ewels/MultiQC/archive/master.zip) or clone
-this repository to your computer:
-
-```
-git clone https://github.com/ewels/MultiQC.git
-```
-
-Install the MultiQC python package:
-
-```
-cd MultiQC
-python setup.py develop
-```
-
-In the terminal, go to your analysis directory and run `multiqc .` - that's it!
-
-```
-cd my_analysis
-multiqc .
-```
-
-The report is created in `multiqc_report/multiqc_report.html` by default.
-A zip file of the report is also generated to facilitate easy transfer and sharing.
-
-Tab-delimited data files are also created in `multiqc_report/report_data/`,
-containing extra information. These can be easily inspected using Excel.
-
-For more detailed instructions, run `multiqc -h`:
-
-```
-$ multiqc -h
-usage: multiqc [-h] [-i TITLE] [-t TEMPLATE] [-o OUTPUT_DIR]
-               [-m [MODULE [MODULE ...]]] [-f] [-l LEVEL] [-v]
-               <analysis directory>
-
-MultiQC is a tool to create an aggregate report summarising the results of
-bioinformatics analyses across numerous samples. To run, supply with a
-directory to scan for analysis results. To run here, use 'multiqc .'
-
-positional arguments:
-  <analysis directory>  Directory with analysis results to parse. Use '.' for
-                        current working directory.
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -i TITLE, --title TITLE
-                        Report title
-  -t TEMPLATE, --template TEMPLATE
-                        Report template to use. Choose from: default
-  -o OUTPUT_DIR, --output_dir OUTPUT_DIR
-                        Output directory. Default: multiqc_report
-  -m [MODULE [MODULE ...]], --module [MODULE [MODULE ...]]
-                        Use only these modules. Choose from: featureCounts,
-                        bismark, star, cutadapt, fastq_screen, fastqc, picard
-  -f, --force           Overwrite any existing reports
-  -l LEVEL, --logging LEVEL
-                        Level of logging to be printed to the console. Choose
-                        from 'debug', 'info', 'warning', 'error', 'critical'
-  -v, --version         Print the version of the program and exit
-```
-
-## Contributions & Support
-
-Contributions and suggestions for new features are welcome, as are bug reports!
-Please create a new [issue](https://github.com/ewels/MultiQC/issues) for any
-of these, including example reports where possible.
-
-Pull requests with new code are always gladly received, see the
-[contributing notes](https://github.com/ewels/MultiQC/blob/master/CONTRIBUTING.md)
-for details.
-
-If in doubt, feel free to get in touch with the author:
-[@ewels](https://github.com/ewels) (phil.ewels@scilifelab.se)
+If anyone has any suggestions for how to better package this app,
+please get in touch!
