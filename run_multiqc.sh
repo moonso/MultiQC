@@ -1,4 +1,4 @@
 #!/bin/sh
 export MULTQC_IS_APP=True
-python setup.py -q develop --user
-python scripts/multiqc $@
+venv/bin/python setup.py -q develop
+venv/bin/python scripts/multiqc $@
