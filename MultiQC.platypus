@@ -12,12 +12,15 @@
 	<string>Phil Ewels</string>
 	<key>BundledFiles</key>
 	<array>
-		<string>/Users/philewels/Work/MultiQC/multiqc</string>
-		<string>/Users/philewels/Work/MultiQC/templates</string>
 		<string>/Users/philewels/Work/MultiQC_app/multiqc_app_header.html</string>
 		<string>/Users/philewels/Work/MultiQC_app/MultiQC_logo.png</string>
+		<string>/Users/philewels/Work/MultiQC/CONTRIBUTING.md</string>
+		<string>/Users/philewels/Work/MultiQC/LICENSE</string>
+		<string>/Users/philewels/Work/MultiQC/multiqc</string>
+		<string>/Users/philewels/Work/MultiQC/README.md</string>
 		<string>/Users/philewels/Work/MultiQC/scripts</string>
-		<string>/Users/philewels/Work/MultiQC_app/venv</string>
+		<string>/Users/philewels/Work/MultiQC/setup.py</string>
+		<string>/Users/philewels/Work/MultiQC/templates</string>
 	</array>
 	<key>Creator</key>
 	<string>Platypus-4.9</string>
@@ -91,6 +94,6 @@
 	<key>UseXMLPlistFormat</key>
 	<false/>
 	<key>Version</key>
-	<string>0.1</string>
+	<string>0.1 devel</string>
 </dict>
 </plist>
