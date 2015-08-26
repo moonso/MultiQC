@@ -14,10 +14,10 @@
 	<array>
 		<string>/Users/philewels/Work/MultiQC/multiqc</string>
 		<string>/Users/philewels/Work/MultiQC/templates</string>
-		<string>/Users/philewels/Work/MultiQC/osx_app/multiqc_app_header.html</string>
-		<string>/Users/philewels/Work/MultiQC/osx_app/MultiQC_logo.png</string>
+		<string>/Users/philewels/Work/MultiQC_app/multiqc_app_header.html</string>
+		<string>/Users/philewels/Work/MultiQC_app/MultiQC_logo.png</string>
 		<string>/Users/philewels/Work/MultiQC/scripts</string>
-		<string>/Users/philewels/Work/MultiQC/osx_app/venv</string>
+		<string>/Users/philewels/Work/MultiQC_app/venv</string>
 	</array>
 	<key>Creator</key>
 	<string>Platypus-4.9</string>
@@ -36,7 +36,7 @@
 	<key>ExecutablePath</key>
 	<string>/usr/local/share/platypus/ScriptExec</string>
 	<key>IconPath</key>
-	<string>/Users/philewels/Work/MultiQC/osx_app/MultiQC_logo_square.icns</string>
+	<string>/Users/philewels/Work/MultiQC_app/MultiQC_logo_square.icns</string>
 	<key>Identifier</key>
 	<string>org.philewels.MultiQC</string>
 	<key>Interpreter</key>
@@ -62,7 +62,7 @@
 		<string>-f</string>
 	</array>
 	<key>ScriptPath</key>
-	<string>/Users/philewels/Work/MultiQC/osx_app/run_multiqc.sh</string>
+	<string>/Users/philewels/Work/MultiQC_app/run_multiqc.sh</string>
 	<key>Secure</key>
 	<false/>
 	<key>ShowInDock</key>

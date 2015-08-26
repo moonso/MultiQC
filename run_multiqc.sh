@@ -1,4 +1,4 @@
 #!/bin/sh
 export MULTQC_IS_APP=True
-source venv/bin/activate
-"$PWD/venv/bin/python" scripts/multiqc "$@"
+python setup.py -q develop --user
+python scripts/multiqc $@
