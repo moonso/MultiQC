@@ -9,13 +9,9 @@ This repository branch contains files to build the Mac OS X App version of Multi
 
 The OS X app is built using [Platypus](http://sveinbjorn.org/platypus).
 
-Note: When running this app, a bash script installs MultiQC and its
-dependencies into your Python environment, using the following command:
+To make the app work in as many places as possible, the distribution
+includes a python virtual environment with all required dependencies (idea from
+[here](http://apple.stackexchange.com/questions/159611/including-python-script-dependencies-virtualenv-contents-in-platypus)).
 
-```
-python setup.py -q develop --user
-```
-
-This is the only way I've figured out to get the Python dependencies to
-be satisfied when distributing the app. If anyone has any suggestions
-for how to better package this app, please get in touch!
+If anyone has any suggestions for how to better package this app,
+please get in touch!
