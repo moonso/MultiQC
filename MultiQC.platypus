@@ -21,6 +21,7 @@
 		<string>/Users/philewels/Work/MultiQC/scripts</string>
 		<string>/Users/philewels/Work/MultiQC/setup.py</string>
 		<string>/Users/philewels/Work/MultiQC/templates</string>
+		<string>/Users/philewels/Work/MultiQC_app/venv</string>
 	</array>
 	<key>Creator</key>
 	<string>Platypus-4.9</string>
